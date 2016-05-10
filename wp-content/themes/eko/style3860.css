@@ -23,12 +23,44 @@ table.logistics-table th, table.logistics-table td {
     transform: translate(50%,-7%);
     top: 0;
     height: 85%; }
-.slide.js-slide > a {
+    
+.slideshow-readmore{
+    position: absolute;
+    top:50%;
+    left:50%;
+    z-index: 2;
     height: 22vmin;
     width: 22vmin;
     max-height: 270px;
-    max-width: 270px;}
-.slide.js-slide > a > img {    height: inherit;
+    max-width: 270px;
+    background-color: #6AC836;
+    border-radius: 100%;
+    transform: translate(-50%,-50%);
+}
+.slideshow-readmore>div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: Tahoma;
+    white-space: nowrap;
+}
+.slideshow-readmore>div>div:first-child{
+    color:white;
+    font-weight: bold;
+    font-size:calc(1.5vw + 1.5vh);
+    line-height:calc(1.5vw + 1.5vh);
+    padding-bottom: 5px;
+}
+.slideshow-readmore>div>div:nth-child(2){
+    color:black;
+    font-size:calc(0.2vw + 1.7vh);
+    line-height:calc(0.2vw + 1.7vh);
+    padding-top: 5px;
+}
+
+.slideshow-readmore > img {    height: inherit;
     transform: translate(-50%,-50%);
     width: inherit;
     image-rendering: -moz-crisp-edges;      
