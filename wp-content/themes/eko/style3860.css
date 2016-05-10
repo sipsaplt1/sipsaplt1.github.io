@@ -18,12 +18,23 @@ table.logistics-table th, table.logistics-table td {
 }
 
 .bottles {max-width: 100%; max-height: 100%}
-.img-responsible {     right: 25%;
+.img-responsible {
+    right: calc((3vw + 69px) + (25% - 11vmin));
+    transform: translate(50%,-7%);
     top: 0;
-    height: 70%;
-    transform: translate(50%,8%); }
-.slide.js-slide > a {transform:translate(-50%,-50%);}
-.slide.js-slide > a > img {max-height: 25vh;  min-height: 120px;}
+    height: 85%; }
+.slide.js-slide > a {
+    height: 22vmin;
+    width: 22vmin;
+    max-height: 270px;
+    max-width: 270px;}
+.slide.js-slide > a > img {    height: inherit;
+    transform: translate(-50%,-50%);
+    width: inherit;
+    image-rendering: -moz-crisp-edges;      
+    image-rendering:   -o-crisp-edges;        
+    image-rendering: -webkit-optimize-contrast;
+}
 .menu_icon {background: transparent !important; border: 1px solid transparent !important;
     margin-top: -4px !important; margin-right: 80px !important; width: 57px; height: 46px; }
 .nav > li  > a {color: black !important; font-size: 42px; font-weight: bold; text-align: center;
@@ -42,14 +53,17 @@ table.logistics-table th, table.logistics-table td {
 .slideshow-text-1 p {margin-bottom: 0px !important; }
 
 .slideshow-text-2 { 
-   font-size: 9vmin;
-    top: 50%;
-    transform: translateY(-70%);
-    padding-left: 16vw;
-    line-height: 9vmin;
+   font-size: calc(3vw + 3vh);
+    line-height: calc(3vw + 3vh);
     color: black;}
 .slideshow-text-2 p {margin-bottom: 0px !important; }
-
+.slideshow-text-wrap{
+    position: absolute;
+    z-index: 2;
+    top: 47%;
+    left: calc((3vw + 69px) + (25% - 11vmin));
+    transform: translate(-50%,-50%);
+}
 
 .img-slideshow{
     display: block;
@@ -135,8 +149,10 @@ a.greenHover:hover{
 /*.button-left {position: absolute; top:calc(50% - 36px); left:3vw; cursor: pointer; z-index: 10;}
 .button-right {position: absolute; top:calc(50% - 36px); right:3vw; cursor: pointer; z-index: 10;}
 */
-.button-left {position: absolute; top:50%; left:3vw; cursor: pointer; z-index: 10;}
-.button-right {position: absolute; top:50%; right:3vw; cursor: pointer; z-index: 10;}
+.button-left {position: absolute;    top: 49%;
+    transform: translateY(-50%);left:3vw; cursor: pointer; z-index: 10;}
+.button-right {position: absolute;     top: 49%;
+    transform: translateY(-50%);right:3vw; cursor: pointer; z-index: 10;}
 
 .navbar-remove-margin {margin-bottom: 0px;}
 .birch_tree_sap_title {font-size: 62px; color: black; text-align: center; padding-top: 60px; padding-bottom: 70px;}

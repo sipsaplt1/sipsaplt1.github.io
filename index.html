@@ -78,7 +78,7 @@ url('wp-content/themes/eko/img/background5.jpg');">
                                         src="wp-content/themes/eko/img/slideshow-readmore.png"
                                         alt=""/></a>
 
-                                <img src="wp-content/uploads/2016/03/g.jpg"
+                                <img src="wp-content/uploads/2016/03/sipsap g.jpg"
                                      style="position: absolute;" class="img-responsible "/>
                             </div>
 
@@ -89,7 +89,7 @@ url('wp-content/themes/eko/img/background5.jpg');">
                                         class="logistics-read-more-sm " style="vertical-align: top;"
                                         src="wp-content/themes/eko/img/slideshow-readmore.png"
                                         alt=""/></a>
-                                <img src="wp-content/uploads/2016/03/ag.jpg"
+                                <img src="wp-content/uploads/2016/03/sipsap ag.jpg"
                                      style="position: absolute;" class="img-responsible "/>
                             </div>
 
@@ -100,7 +100,7 @@ url('wp-content/themes/eko/img/background5.jpg');">
                                         class="logistics-read-more-sm " style="vertical-align: top;"
                                         src="wp-content/themes/eko/img/slideshow-readmore.png"
                                         alt=""/></a>
-                                <img src="wp-content/uploads/2016/03/c.jpg"
+                                <img src="wp-content/uploads/2016/03/sipsap c.jpg"
                                      style="position: absolute;" class="img-responsible "/>
                             </div>
 
@@ -111,7 +111,7 @@ url('wp-content/themes/eko/img/background5.jpg');">
                                         class="logistics-read-more-sm " style="vertical-align: top;"
                                         src="wp-content/themes/eko/img/slideshow-readmore.png"
                                         alt=""/></a>
-                                <img src="wp-content/uploads/2016/03/il.jpg"
+                                <img src="wp-content/uploads/2016/03/sipsap il.jpg"
                                      style="position: absolute;" class="img-responsible "/>
                             </div>
 
@@ -122,7 +122,7 @@ url('wp-content/themes/eko/img/background5.jpg');">
                                         class="logistics-read-more-sm " style="vertical-align: top;"
                                         src="wp-content/themes/eko/img/slideshow-readmore.png"
                                         alt=""/></a>
-                                <img src="wp-content/uploads/2016/03/m.jpg"
+                                <img src="wp-content/uploads/2016/03/sipsap m.jpg"
                                      style="position: absolute;" class="img-responsible "/>
                             </div>
 
@@ -133,7 +133,7 @@ url('wp-content/themes/eko/img/background5.jpg');">
                                         class="logistics-read-more-sm " style="vertical-align: top;"
                                         src="wp-content/themes/eko/img/slideshow-readmore.png"
                                         alt=""/></a>
-                                <img src="wp-content/uploads/2016/03/s.jpg"
+                                <img src="wp-content/uploads/2016/03/sipsap s.jpg"
                                      style="position: absolute;" class="img-responsible "/>
                             </div>
 
@@ -142,14 +142,15 @@ url('wp-content/themes/eko/img/background5.jpg');">
                             
 
                 </div>
-               <div class="slideshow-text-2 tahoma "
-                                     style="position: absolute; left: 0; z-index: 1;">
+            <div class="slideshow-text-wrap"> 
+               <div class="slideshow-text-2 tahoma">
                                     <span
                                         style="display: inline-block;"><p>What is</p>
-<p><span class="color">Birch</span></p>
-<p><span class="color">Water</span></p>
-</span>
+                                    <p><span class="color">Birch</span></p>
+                                    <p><span class="color">Water</span></p>
+                                    </span>
                                 </div>
+            </div>   
                 <div class="js-prev button-left"><img class="slide-left"
                                                       src="wp-content/themes/eko/img/icon-left.png"
                                                       alt=""/></div>
@@ -470,8 +471,8 @@ Email: <b>tomas@sultys.biz</b><br />
 
         function resize() {
             var width = $( window ).width();
-            var height = width / 1895 * 1049;
-            slides.height(height);
+            var slidesHeight = width / 1895 * 1049;
+            slides.height(slidesHeight);
         }
     });
 
