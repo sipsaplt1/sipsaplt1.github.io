@@ -1,8 +1,10 @@
-body {font-family: Tahoma,Verdana,Segoe,sans-serif;font-size:16px;}
+body {font-family: Tahoma,Verdana,Segoe,sans-serif;font-size:16px;
+}
 
 
 table.logistics-table, table.logistics-table th, table.logistics-table td, table.logistics-table tr {border: 1px solid #BBB; height: 50px;}
-.logistics-table {    width: 100%; margin-bottom: 50px; font-size:13px; color:#626262;}
+
+.logistics-table {    width: 100%; margin-bottom: 50px; font-size:13px; color:#626262;    overflow-x: scroll;}
 
 table.logistics-table th {
     font-weight: 700;
@@ -12,9 +14,39 @@ table.logistics-table th {
 table.logistics-table th, table.logistics-table td {
     text-align: center;
     vertical-align: middle;
-    padding: 10px;
     border-width: 1px;
     border-style: solid;
+}
+
+.logistics-table.b{
+    margin-bottom: 10px;
+}
+
+.logistics-table-wrap::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.logistics-table-wrap::-webkit-scrollbar:horizontal {
+    height: 12px;
+}
+.logistics-table-wrap::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+.logistics-table-wrap::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+
+
+table.logistics-table.b th, table.logistics-table.b td {
+    padding:10px;
+}
+
+.logistics-list{
+    margin: 8px 0;
 }
 
 .bottles {max-width: 100%; max-height: 100%}
@@ -175,7 +207,7 @@ a.greenHover:hover{
 
 
 
-.clean-title {text-align: center; font-size: 42px; padding-top: 50px; padding-bottom: 50px;}
+.clean-title {text-align: center; font-size: calc(1.5vw + 1.5vh); padding-top: 50px; padding-bottom: 50px;}
 .slides {position: relative; background: #fff;}
 .slide {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-size: cover; }
 /*.button-left {position: absolute; top:calc(50% - 36px); left:3vw; cursor: pointer; z-index: 10;}
@@ -191,7 +223,7 @@ a.greenHover:hover{
 .birch_tree_sap_text {font-size: 16px; background: url('img/icon.png') no-repeat left top; padding-left: 40px;  line-height: 30px;}
 .header-color {background: white;}
 .space_down {margin-top: 20px;}
-.remove_border {border: none; background: transparent;}
+.remove_border {border: none ; background: transparent;}
 .color {color: #6AC836; font-weight: bold;}
 .darkgreen {color: #377910;}
 .pt-sans {font-family: 'PT Sans', sans-serif; }
@@ -239,7 +271,12 @@ a.greenHover:hover{
 /* FAKTAI */
 
 .faktai_title {font-weight: bold; font-size: 42px; text-align: center; padding-top: 90px; padding-bottom: 90px; }
-.faktai_text {color: black; font-size:16px; background: url('img/icon.png') no-repeat left top; padding-left: 30px;  line-height: 20px;}
+.faktai_text {color: black; font-size:16px; 
+    background: url('img/icon.png') no-repeat left;
+    padding-left: 22px;
+    margin-left:2px;
+    background-size: 12px;
+    line-height: 20px;}
 .faktai-height-100px {padding-bottom: 100px;}
 .shutterstock {font-weight: bold; font-size: 14px; text-align: center; padding-bottom: 50px;}
 .page-padding-100px {height: 100px;}
