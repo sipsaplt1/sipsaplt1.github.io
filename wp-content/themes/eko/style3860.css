@@ -146,6 +146,13 @@ table.logistics-table.b th, table.logistics-table.b td {
     max-width: 100%;
     float:right;
 }
+.img-all{
+    padding: 10vh 0 2vh;
+    max-height: 100vh;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 a:hover{
     text-decoration: none;
 }
@@ -174,7 +181,7 @@ a:hover{
     max-width:350px;
 }
 @media (min-height: 600px){
-    .img-op{
+    .img-op,.img-all{
         padding: 10vh 0 10vh;
         max-height: 80vh;
     
@@ -272,7 +279,7 @@ a.greenHover:hover{
 
 .faktai_title {font-weight: bold; font-size: 42px; text-align: center; padding-top: 90px; padding-bottom: 90px; }
 .faktai_text {color: black; font-size:16px; 
-    background: url('img/icon.png') no-repeat left;
+    background: url('img/icon.png') no-repeat left 4px;
     padding-left: 22px;
     margin-left:2px;
     background-size: 12px;
